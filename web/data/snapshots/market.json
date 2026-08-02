@@ -1,0 +1,126 @@
+{
+  "updatedAt": "2026-08-02T00:00:00.000Z",
+  "note": "Seed fallback snapshot. Live data is fetched from Yahoo chart v8 when available. Pulse values recomputed with lib/sentiment.ts.",
+  "symbols": [
+    {
+      "symbol": "F",
+      "name": "Ford Motor Company",
+      "price": 11.2,
+      "changePct": 0.45,
+      "pulse": 52.5,
+      "breakdown": { "zRet": 0.1, "zVol": 0.05, "sNews": 0, "pulse": 52.5 },
+      "currency": "USD",
+      "spark": [10.8, 10.9, 11.0, 11.05, 11.1, 11.15, 11.2],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "SPY",
+      "name": "SPDR S&P 500 ETF",
+      "price": 540.0,
+      "changePct": 0.2,
+      "pulse": 51.0,
+      "breakdown": { "zRet": 0.05, "zVol": 0.02, "sNews": 0, "pulse": 51.0 },
+      "currency": "USD",
+      "spark": [535, 536, 537, 538, 539, 540],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "price": 480.0,
+      "changePct": 0.3,
+      "pulse": 53.0,
+      "breakdown": { "zRet": 0.12, "zVol": 0.08, "sNews": 0, "pulse": 53.0 },
+      "currency": "USD",
+      "spark": [470, 472, 475, 477, 479, 480],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "price": 220.0,
+      "changePct": -0.1,
+      "pulse": 49.0,
+      "breakdown": { "zRet": -0.05, "zVol": 0, "sNews": 0, "pulse": 49.0 },
+      "currency": "USD",
+      "spark": [222, 221, 220.5, 220.2, 220.0],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "price": 430.0,
+      "changePct": 0.15,
+      "pulse": 50.5,
+      "breakdown": { "zRet": 0.02, "zVol": 0.01, "sNews": 0, "pulse": 50.5 },
+      "currency": "USD",
+      "spark": [425, 427, 428, 429, 430],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "price": 120.0,
+      "changePct": 1.2,
+      "pulse": 58.0,
+      "breakdown": { "zRet": 0.4, "zVol": 0.2, "sNews": 0, "pulse": 58.0 },
+      "currency": "USD",
+      "spark": [110, 112, 115, 117, 119, 120],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "price": 250.0,
+      "changePct": -0.8,
+      "pulse": 46.0,
+      "breakdown": { "zRet": -0.2, "zVol": 0.1, "sNews": 0, "pulse": 46.0 },
+      "currency": "USD",
+      "spark": [260, 255, 252, 251, 250],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "price": 190.0,
+      "changePct": 0.25,
+      "pulse": 51.5,
+      "breakdown": { "zRet": 0.08, "zVol": 0.03, "sNews": 0, "pulse": 51.5 },
+      "currency": "USD",
+      "spark": [185, 186, 188, 189, 190],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms, Inc.",
+      "price": 520.0,
+      "changePct": 0.4,
+      "pulse": 52.0,
+      "breakdown": { "zRet": 0.1, "zVol": 0.05, "sNews": 0, "pulse": 52.0 },
+      "currency": "USD",
+      "spark": [510, 512, 515, 518, 520],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "price": 175.0,
+      "changePct": 0.1,
+      "pulse": 50.8,
+      "breakdown": { "zRet": 0.04, "zVol": 0.02, "sNews": 0, "pulse": 50.8 },
+      "currency": "USD",
+      "spark": [172, 173, 174, 174.5, 175],
+      "headlines": [],
+      "fetchedAt": "2026-08-02T00:00:00.000Z"
+    }
+  ]
+}
