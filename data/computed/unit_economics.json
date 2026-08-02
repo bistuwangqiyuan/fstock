@@ -1,0 +1,249 @@
+{
+  "version": "1.0.0",
+  "as_of": "2026-08-02",
+  "fx": {
+    "usd_cny": 7.2,
+    "note": "Reference USD/CNY for model consistency as of 2026-08-02; not a FX forecast."
+  },
+  "scenarios": {
+    "conservative": {
+      "years": [
+        {
+          "year": "y1",
+          "monthly_pageviews": 20000,
+          "ads_cny": 4320.0,
+          "alerts_cny": 2845.5,
+          "affiliate_cny": 0.0,
+          "revenue_cny": 7165.5,
+          "cogs_cny": 2149.65,
+          "fixed_cny": 42000.0,
+          "ebitda_cny": -36984.15,
+          "rpm_usd": 2.5,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": -36984.15
+        },
+        {
+          "year": "y2",
+          "monthly_pageviews": 60000,
+          "ads_cny": 12960.0,
+          "alerts_cny": 8536.49,
+          "affiliate_cny": 0.0,
+          "revenue_cny": 21496.49,
+          "cogs_cny": 6448.95,
+          "fixed_cny": 48000.0,
+          "ebitda_cny": -32952.46,
+          "rpm_usd": 2.5,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": -69936.61
+        },
+        {
+          "year": "y3",
+          "monthly_pageviews": 120000,
+          "ads_cny": 25920.0,
+          "alerts_cny": 17072.99,
+          "affiliate_cny": 1500.0,
+          "revenue_cny": 44492.99,
+          "cogs_cny": 13347.9,
+          "fixed_cny": 54000.0,
+          "ebitda_cny": -22854.91,
+          "rpm_usd": 2.5,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": -92791.52
+        },
+        {
+          "year": "y4",
+          "monthly_pageviews": 180000,
+          "ads_cny": 38880.0,
+          "alerts_cny": 25609.48,
+          "affiliate_cny": 4000.0,
+          "revenue_cny": 68489.48,
+          "cogs_cny": 20546.84,
+          "fixed_cny": 60000.0,
+          "ebitda_cny": -12057.37,
+          "rpm_usd": 2.5,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": -104848.89
+        },
+        {
+          "year": "y5",
+          "monthly_pageviews": 240000,
+          "ads_cny": 51840.0,
+          "alerts_cny": 34145.97,
+          "affiliate_cny": 6000.0,
+          "revenue_cny": 91985.97,
+          "cogs_cny": 27595.79,
+          "fixed_cny": 66000.0,
+          "ebitda_cny": -1609.82,
+          "rpm_usd": 2.5,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": -106458.71
+        }
+      ],
+      "payback_vs_risk_capital_year": null,
+      "y5_revenue_cny": 91985.97,
+      "y5_ebitda_cny": -1609.82,
+      "y5_cum_ebitda_cny": -106458.71
+    },
+    "base": {
+      "years": [
+        {
+          "year": "y1",
+          "monthly_pageviews": 50000,
+          "ads_cny": 21600.0,
+          "alerts_cny": 22781.09,
+          "affiliate_cny": 0.0,
+          "revenue_cny": 44381.09,
+          "cogs_cny": 10651.46,
+          "fixed_cny": 54000.0,
+          "ebitda_cny": -20270.37,
+          "rpm_usd": 5.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": -20270.37
+        },
+        {
+          "year": "y2",
+          "monthly_pageviews": 140000,
+          "ads_cny": 60480.0,
+          "alerts_cny": 63787.05,
+          "affiliate_cny": 2500.0,
+          "revenue_cny": 126767.05,
+          "cogs_cny": 30424.09,
+          "fixed_cny": 66000.0,
+          "ebitda_cny": 30342.96,
+          "rpm_usd": 5.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 10072.59
+        },
+        {
+          "year": "y3",
+          "monthly_pageviews": 280000,
+          "ads_cny": 120960.0,
+          "alerts_cny": 127574.09,
+          "affiliate_cny": 10000.0,
+          "revenue_cny": 258534.09,
+          "cogs_cny": 62048.18,
+          "fixed_cny": 78000.0,
+          "ebitda_cny": 118485.91,
+          "rpm_usd": 5.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 128558.5
+        },
+        {
+          "year": "y4",
+          "monthly_pageviews": 450000,
+          "ads_cny": 194400.0,
+          "alerts_cny": 205029.79,
+          "affiliate_cny": 22000.0,
+          "revenue_cny": 421429.79,
+          "cogs_cny": 101143.15,
+          "fixed_cny": 90000.0,
+          "ebitda_cny": 230286.64,
+          "rpm_usd": 5.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 358845.14
+        },
+        {
+          "year": "y5",
+          "monthly_pageviews": 600000,
+          "ads_cny": 259200.0,
+          "alerts_cny": 273373.06,
+          "affiliate_cny": 35000.0,
+          "revenue_cny": 567573.06,
+          "cogs_cny": 136217.53,
+          "fixed_cny": 102000.0,
+          "ebitda_cny": 329355.52,
+          "rpm_usd": 5.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 688200.66
+        }
+      ],
+      "payback_vs_risk_capital_year": "y3",
+      "y5_revenue_cny": 567573.06,
+      "y5_ebitda_cny": 329355.52,
+      "y5_cum_ebitda_cny": 688200.66
+    },
+    "optimistic": {
+      "years": [
+        {
+          "year": "y1",
+          "monthly_pageviews": 100000,
+          "ads_cny": 77760.0,
+          "alerts_cny": 118681.2,
+          "affiliate_cny": 4000.0,
+          "revenue_cny": 200441.2,
+          "cogs_cny": 36079.42,
+          "fixed_cny": 66000.0,
+          "ebitda_cny": 98361.78,
+          "rpm_usd": 9.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 98361.78
+        },
+        {
+          "year": "y2",
+          "monthly_pageviews": 320000,
+          "ads_cny": 248832.0,
+          "alerts_cny": 379779.84,
+          "affiliate_cny": 25000.0,
+          "revenue_cny": 653611.84,
+          "cogs_cny": 117650.13,
+          "fixed_cny": 84000.0,
+          "ebitda_cny": 451961.71,
+          "rpm_usd": 9.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 550323.49
+        },
+        {
+          "year": "y3",
+          "monthly_pageviews": 650000,
+          "ads_cny": 505440.0,
+          "alerts_cny": 771427.8,
+          "affiliate_cny": 70000.0,
+          "revenue_cny": 1346867.8,
+          "cogs_cny": 242436.2,
+          "fixed_cny": 102000.0,
+          "ebitda_cny": 1002431.6,
+          "rpm_usd": 9.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 1552755.09
+        },
+        {
+          "year": "y4",
+          "monthly_pageviews": 1000000,
+          "ads_cny": 777600.0,
+          "alerts_cny": 1186812.0,
+          "affiliate_cny": 130000.0,
+          "revenue_cny": 2094412.0,
+          "cogs_cny": 376994.16,
+          "fixed_cny": 120000.0,
+          "ebitda_cny": 1597417.84,
+          "rpm_usd": 9.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 3150172.93
+        },
+        {
+          "year": "y5",
+          "monthly_pageviews": 1400000,
+          "ads_cny": 1088640.0,
+          "alerts_cny": 1661536.8,
+          "affiliate_cny": 200000.0,
+          "revenue_cny": 2950176.8,
+          "cogs_cny": 531031.82,
+          "fixed_cny": 140000.0,
+          "ebitda_cny": 2279144.98,
+          "rpm_usd": 9.0,
+          "paid_cac_cny": 0,
+          "cumulative_ebitda_cny": 5429317.91
+        }
+      ],
+      "payback_vs_risk_capital_year": "y2",
+      "y5_revenue_cny": 2950176.8,
+      "y5_ebitda_cny": 2279144.98,
+      "y5_cum_ebitda_cny": 5429317.91
+    }
+  },
+  "notes": [
+    "Primary acquisition is organic English SEO; paid CAC held at 0 in base model.",
+    "Alert MAU approximated as 55% of monthly pageviews.",
+    "Affiliate path is compliance-uncertain; kept small in base."
+  ]
+}

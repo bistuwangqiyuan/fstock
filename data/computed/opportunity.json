@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "as_of": "2026-08-02",
+  "weights": {
+    "compliance": 0.22,
+    "solo_executable": 0.18,
+    "capital_efficiency": 0.14,
+    "automation": 0.14,
+    "demand_reality": 0.12,
+    "moat_realism": 0.1,
+    "user_value_good": 0.1
+  },
+  "rows": [
+    {
+      "id": "info_hub",
+      "name": "公开市场情绪与投资者教育信息站（SEO+Ads+事实提醒）",
+      "selected": true,
+      "veto_reason": null,
+      "scores": {
+        "compliance": 8.7,
+        "solo_executable": 8.5,
+        "capital_efficiency": 8.3,
+        "automation": 9.1,
+        "demand_reality": 7.4,
+        "moat_realism": 5.6,
+        "user_value_good": 8.2
+      },
+      "weighted_score": 8.148
+    },
+    {
+      "id": "news_agg",
+      "name": "股票新闻/公告聚合站（无建议、无信号）",
+      "selected": false,
+      "veto_reason": null,
+      "scores": {
+        "compliance": 8.4,
+        "solo_executable": 8.0,
+        "capital_efficiency": 7.4,
+        "automation": 8.6,
+        "demand_reality": 7.0,
+        "moat_realism": 4.4,
+        "user_value_good": 7.2
+      },
+      "weighted_score": 7.528
+    },
+    {
+      "id": "sentiment_dash",
+      "name": "公开情绪仪表盘 SaaS（无买卖信号）",
+      "selected": false,
+      "veto_reason": null,
+      "scores": {
+        "compliance": 7.2,
+        "solo_executable": 6.2,
+        "capital_efficiency": 6.0,
+        "automation": 7.8,
+        "demand_reality": 6.8,
+        "moat_realism": 5.2,
+        "user_value_good": 6.8
+      },
+      "weighted_score": 6.648
+    },
+    {
+      "id": "sentiment_api",
+      "name": "情绪指标开发者 API（信息产品）",
+      "selected": false,
+      "veto_reason": null,
+      "scores": {
+        "compliance": 7.6,
+        "solo_executable": 5.8,
+        "capital_efficiency": 6.4,
+        "automation": 8.0,
+        "demand_reality": 5.8,
+        "moat_realism": 5.5,
+        "user_value_good": 6.5
+      },
+      "weighted_score": 6.628
+    },
+    {
+      "id": "strategy_gen",
+      "name": "AI 交易策略/买卖信号生成器",
+      "selected": false,
+      "veto_reason": "易落入 Investment Adviser 规制；与无人公司、合法合规约束冲突",
+      "scores": {
+        "compliance": 1.5,
+        "solo_executable": 3.0,
+        "capital_efficiency": 4.0,
+        "automation": 7.2,
+        "demand_reality": 7.8,
+        "moat_realism": 4.0,
+        "user_value_good": 2.8
+      },
+      "weighted_score": 4.054
+    },
+    {
+      "id": "personal_reco",
+      "name": "个性化荐股与投资建议引擎",
+      "selected": false,
+      "veto_reason": "明确落入投顾/投资建议规制；否决",
+      "scores": {
+        "compliance": 1.0,
+        "solo_executable": 2.5,
+        "capital_efficiency": 3.5,
+        "automation": 6.5,
+        "demand_reality": 8.2,
+        "moat_realism": 3.5,
+        "user_value_good": 2.5
+      },
+      "weighted_score": 3.654
+    }
+  ],
+  "selected_id": "info_hub",
+  "selected_name": "公开市场情绪与投资者教育信息站（SEO+Ads+事实提醒）",
+  "top_non_vetoed_id": "info_hub",
+  "selection_consistent": true
+}

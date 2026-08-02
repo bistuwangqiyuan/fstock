@@ -1,0 +1,148 @@
+{
+  "version": "1.0.0",
+  "as_of": "2026-08-02",
+  "formulas": {
+    "m_book": "1 + ROI5/100",
+    "r_book": "M_book ** (1/5) - 1",
+    "ev_l0": "p * M_win + (1-p) * 0",
+    "ev_l1": "p * M_win + (1-p) * 1",
+    "r_risk": "EV ** (1/5) - 1",
+    "payoff_ratio_b": "(M_win - 1) / loss_of_stake"
+  },
+  "scenarios": {
+    "conservative": {
+      "risk_capital_cny": 80000,
+      "book_roi_path_pct": [
+        -40,
+        -10,
+        20,
+        50,
+        80
+      ],
+      "book": {
+        "m_book": 1.8,
+        "r_book": 0.124746,
+        "roi5_pct": 80
+      },
+      "win_prob": 0.12,
+      "m_win": 1.8,
+      "payoff_ratio_b": 0.8,
+      "ev": {
+        "p": 0.12,
+        "m_win": 1.8,
+        "ev_l0": 0.216,
+        "ev_l1": 1.096,
+        "r_risk_l0": -0.263978,
+        "r_risk_l1": 0.018503
+      },
+      "success_definition": "36个月内累计经营现金流≥风险本金，且无重大合规处罚；退出事件为次要情景，不计入主胜率除非单独标注。"
+    },
+    "base": {
+      "risk_capital_cny": 120000,
+      "book_roi_path_pct": [
+        -20,
+        20,
+        60,
+        110,
+        180
+      ],
+      "book": {
+        "m_book": 2.8,
+        "r_book": 0.22866,
+        "roi5_pct": 180
+      },
+      "win_prob": 0.18,
+      "m_win": 2.8,
+      "payoff_ratio_b": 1.8,
+      "ev": {
+        "p": 0.18,
+        "m_win": 2.8,
+        "ev_l0": 0.504,
+        "ev_l1": 1.324,
+        "r_risk_l0": -0.128061,
+        "r_risk_l1": 0.057737
+      },
+      "success_definition": "36个月内累计经营现金流≥风险本金，且无重大合规处罚；退出事件为次要情景，不计入主胜率除非单独标注。"
+    },
+    "optimistic": {
+      "risk_capital_cny": 200000,
+      "book_roi_path_pct": [
+        10,
+        50,
+        120,
+        220,
+        350
+      ],
+      "book": {
+        "m_book": 4.5,
+        "r_book": 0.35096,
+        "roi5_pct": 350
+      },
+      "win_prob": 0.25,
+      "m_win": 4.5,
+      "payoff_ratio_b": 3.5,
+      "ev": {
+        "p": 0.25,
+        "m_win": 4.5,
+        "ev_l0": 1.125,
+        "ev_l1": 1.875,
+        "r_risk_l0": 0.023836,
+        "r_risk_l1": 0.133967
+      },
+      "success_definition": "36个月内累计经营现金流≥风险本金，且无重大合规处罚；退出事件为次要情景，不计入主胜率除非单独标注。"
+    }
+  },
+  "sensitivity_base_m": {
+    "p_low": {
+      "p": 0.12,
+      "m_win": 2.8,
+      "ev_l0": 0.336,
+      "ev_l1": 1.216,
+      "r_risk_l0": -0.195978,
+      "r_risk_l1": 0.039888
+    },
+    "p_mid": {
+      "p": 0.18,
+      "m_win": 2.8,
+      "ev_l0": 0.504,
+      "ev_l1": 1.324,
+      "r_risk_l0": -0.128061,
+      "r_risk_l1": 0.057737
+    },
+    "p_high": {
+      "p": 0.25,
+      "m_win": 2.8,
+      "ev_l0": 0.7,
+      "ev_l1": 1.45,
+      "r_risk_l0": -0.06885,
+      "r_risk_l1": 0.077144
+    },
+    "payoff_ratio_at_base_m": 1.8
+  },
+  "old_need_audit": {
+    "claimed": {
+      "claimed_book_annualized": 0.3,
+      "claimed_win_rate_mid": 0.105,
+      "claimed_payoff_ratio": 7.0,
+      "claimed_ev_moic": 1.5,
+      "claimed_risk_adj_annualized": 0.1,
+      "claimed_roi5_pct": 1,
+      "claimed_m_from_roi5": 1.01,
+      "claimed_y1_revenue_usd": 1500000
+    },
+    "recalc_from_roi5": {
+      "m_book": 1.01,
+      "r_book": 0.001992,
+      "roi5_pct": 1
+    },
+    "recalc_ev_band_using_claimed_p_and_m": {
+      "p": 0.105,
+      "m": 1.01,
+      "m_win": 1.01,
+      "ev_l0": 0.10605,
+      "ev_l1": 1.00105,
+      "r_risk_l0": -0.361586,
+      "r_risk_l1": 0.00021
+    }
+  }
+}

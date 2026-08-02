@@ -1,0 +1,96 @@
+{
+  "as_of": "2026-08-02",
+  "note": "每条记录须可查证；标注 speculation 的条目不得单独支撑结论。",
+  "entries": [
+    {
+      "id": "stock_market_software_mi_2025",
+      "field": "Global stock market software market size (one industry estimate)",
+      "value": "USD 5.81B in 2025; CAGR ~12.8% to 2034",
+      "unit": "USD",
+      "url": "https://marketintelo.com/report/stock-market-software-market",
+      "retrieved": "2026-08-02",
+      "notes": "Commercial market report; treat as one bound in a range, not single truth. Cross-check with other vendors."
+    },
+    {
+      "id": "stock_analysis_software_di_2025",
+      "field": "Global stock analysis software market size (cross-check estimate)",
+      "value": "USD 15.8B in 2025; CAGR ~7.2% to 2034",
+      "unit": "USD",
+      "url": "https://dataintelo.com/report/global-stock-analysis-software-market",
+      "retrieved": "2026-08-02",
+      "notes": "Different scope vs MarketIntelo; report uses interval TAM narrative rather than picking one number."
+    },
+    {
+      "id": "gallup_stock_ownership_2025",
+      "field": "Share of Americans who own stock (2024–2025)",
+      "value": "62%",
+      "unit": "percent of US adults",
+      "url": "https://news.gallup.com/poll/266807/percentage-americans-owns-stock.aspx",
+      "retrieved": "2026-08-02",
+      "notes": "Includes stocks via mutual funds / retirement accounts; not equal to active trading SAM."
+    },
+    {
+      "id": "broadridge_retail_investors_2024",
+      "field": "US retail investors tracked via intermediaries (order of magnitude)",
+      "value": "~48–50 million",
+      "unit": "persons (taxable+IRA via intermediaries)",
+      "url": "https://www.gurufocus.com/news/2734930/broadridge-investor-pulse-now-an-interactive-tool-enabling-public-access-to-analyze-investment-behavior-of-nearly-50-million-us-retail-investors",
+      "retrieved": "2026-08-02",
+      "notes": "Secondary coverage of Broadridge Investor Pulse; used as SAM ceiling signal, not addressable users."
+    },
+    {
+      "id": "sec_fr_info_providers_2022",
+      "field": "SEC publisher exclusion / information providers under Advisers Act",
+      "value": "Publisher exclusion requires impersonal, bona fide, general & regular circulation (Lowe); personalized advice not excluded",
+      "unit": "regulatory",
+      "url": "https://www.federalregister.gov/documents/2022/06/22/2022-13307/request-for-comment-on-certain-information-providers-acting-as-investment-advisers",
+      "retrieved": "2026-08-02",
+      "notes": "Official Federal Register RFC. Not legal advice. Product must avoid personalized recommendations."
+    },
+    {
+      "id": "sec_ia_act_govinfo",
+      "field": "Investment Advisers Act of 1940 definition (statutory text)",
+      "value": "IA includes compensated advice as to advisability of investing/purchasing/selling securities",
+      "unit": "regulatory",
+      "url": "https://www.govinfo.gov/content/pkg/COMPS-1878/pdf/COMPS-1878.pdf",
+      "retrieved": "2026-08-02",
+      "notes": "Primary statute PDF via GovInfo."
+    },
+    {
+      "id": "ghosh_vc_failure_cash",
+      "field": "Venture-backed companies that never return cash to investors",
+      "value": "~75%",
+      "unit": "percent",
+      "url": "https://growthequityinterviewguide.com/venture-capital/venture-capital-resources/venture-capital-statistics",
+      "retrieved": "2026-08-02",
+      "notes": "Secondary summary of Shikhar Ghosh / HBS finding; used only to bound optimism on cash success, not as our win_prob directly."
+    },
+    {
+      "id": "adsense_rpm_us_finance_band",
+      "field": "US / English finance niche display RPM band (industry guides)",
+      "value": "Approx USD 2–15+ per 1000 pageviews depending on geo/quality; model uses 2.5/5.0/9.0",
+      "unit": "USD per 1000 pageviews",
+      "url": "https://www.ezytoolz.com/financial/adsense-revenue-calculator/",
+      "retrieved": "2026-08-02",
+      "notes": "Industry calculator; conservative/base/optimistic RPM deliberately mid-low of published ranges for lean honesty."
+    },
+    {
+      "id": "trends_f_stock_need",
+      "field": "Google Trends seed keyword volume (from need.txt)",
+      "value": 1000,
+      "unit": "Trends index/volume as provided",
+      "url": "local:need.txt",
+      "retrieved": "2026-07-29",
+      "notes": "speculation on absolute commercial search volume; treated as demand seed only, not TAM."
+    },
+    {
+      "id": "fx_model_usd_cny",
+      "field": "Model FX USD/CNY",
+      "value": "USD/CNY=7.20",
+      "unit": "CNY per USD",
+      "url": "model:assumptions.yaml#fx",
+      "retrieved": "2026-08-02",
+      "notes": "Fixed reference for reproducibility; not a forecast."
+    }
+  ]
+}

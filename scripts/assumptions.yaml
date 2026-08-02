@@ -1,0 +1,162 @@
+# F Stock · 全 AI 无人公司商业机会报告
+# 唯一假设入口 — 修改后请运行: python scripts/verify_all.py
+version: "1.0.0"
+as_of: "2026-08-02"
+currency_primary: CNY
+disclaimer: >
+  本文件中的区间假设用于可复现情景分析，不等于承诺回报。
+  标注 speculation 的字段为推测，不得单独作为对外断言。
+
+fx:
+  # 情景分析用参考汇率（非实时牌价）；单位：1 外币 = x CNY
+  usd_cny: 7.20
+  note: "Reference USD/CNY for model consistency as of 2026-08-02; not a FX forecast."
+
+capital:
+  pool_cny: 1000000          # 自有资金总池
+  probe_cap_cny: 120000      # 验证期建议上限（与 Kelly/半Kelly 结果交叉约束）
+  stop_months_neg_contrib: 6 # 连续负贡献月数触发止损复盘
+
+opportunity_weights:
+  compliance: 0.22
+  solo_executable: 0.18
+  capital_efficiency: 0.14
+  automation: 0.14
+  demand_reality: 0.12
+  moat_realism: 0.10
+  user_value_good: 0.10
+
+opportunities:
+  - id: info_hub
+    name: "公开市场情绪与投资者教育信息站（SEO+Ads+事实提醒）"
+    selected: true
+    scores:
+      compliance: 8.7
+      solo_executable: 8.5
+      capital_efficiency: 8.3
+      automation: 9.1
+      demand_reality: 7.4
+      moat_realism: 5.6
+      user_value_good: 8.2
+  - id: news_agg
+    name: "股票新闻/公告聚合站（无建议、无信号）"
+    selected: false
+    scores:
+      compliance: 8.4
+      solo_executable: 8.0
+      capital_efficiency: 7.4
+      automation: 8.6
+      demand_reality: 7.0
+      moat_realism: 4.4
+      user_value_good: 7.2
+  - id: sentiment_dash
+    name: "公开情绪仪表盘 SaaS（无买卖信号）"
+    selected: false
+    scores:
+      compliance: 7.2
+      solo_executable: 6.2
+      capital_efficiency: 6.0
+      automation: 7.8
+      demand_reality: 6.8
+      moat_realism: 5.2
+      user_value_good: 6.8
+  - id: sentiment_api
+    name: "情绪指标开发者 API（信息产品）"
+    selected: false
+    scores:
+      compliance: 7.6
+      solo_executable: 5.8
+      capital_efficiency: 6.4
+      automation: 8.0
+      demand_reality: 5.8
+      moat_realism: 5.5
+      user_value_good: 6.5
+  - id: strategy_gen
+    name: "AI 交易策略/买卖信号生成器"
+    selected: false
+    veto_reason: "易落入 Investment Adviser 规制；与无人公司、合法合规约束冲突"
+    scores:
+      compliance: 1.5
+      solo_executable: 3.0
+      capital_efficiency: 4.0
+      automation: 7.2
+      demand_reality: 7.8
+      moat_realism: 4.0
+      user_value_good: 2.8
+  - id: personal_reco
+    name: "个性化荐股与投资建议引擎"
+    selected: false
+    veto_reason: "明确落入投顾/投资建议规制；否决"
+    scores:
+      compliance: 1.0
+      solo_executable: 2.5
+      capital_efficiency: 3.5
+      automation: 6.5
+      demand_reality: 8.2
+      moat_realism: 3.5
+      user_value_good: 2.5
+
+# 单位经济（英语金融 SEO / 展示广告为主）
+unit_economics:
+  # 页 RPM（USD / 1000 pageviews），美英金融向流量保守区间
+  rpm_usd:
+    conservative: 2.50
+    base: 5.00
+    optimistic: 9.00
+  # 月 pageviews（站点成熟路径，非保证）
+  monthly_pageviews:
+    y1: { conservative: 20000, base: 50000, optimistic: 100000 }
+    y2: { conservative: 60000, base: 140000, optimistic: 320000 }
+    y3: { conservative: 120000, base: 280000, optimistic: 650000 }
+    y4: { conservative: 180000, base: 450000, optimistic: 1000000 }
+    y5: { conservative: 240000, base: 600000, optimistic: 1400000 }
+  # 事实提醒订阅（USD / 月），转化率相对月活访问者近似
+  alert_arpu_usd_month: { conservative: 4.99, base: 7.99, optimistic: 9.99 }
+  alert_pay_conversion: { conservative: 0.0006, base: 0.0012, optimistic: 0.0025 }
+  # 联盟/推荐：合规不确定；基准情景极低
+  affiliate_cny_year:
+    conservative: { y1: 0, y2: 0, y3: 1500, y4: 4000, y5: 6000 }
+    base: { y1: 0, y2: 2500, y3: 10000, y4: 22000, y5: 35000 }
+    optimistic: { y1: 4000, y2: 25000, y3: 70000, y4: 130000, y5: 200000 }
+  # 可变成本占收入（数据 API、CDN、邮件、支付手续费等）
+  cogs_ratio: { conservative: 0.30, base: 0.24, optimistic: 0.18 }
+  # 固定年成本（托管、LLM/爬虫 API、工具、域名、合规模板、杂费）CNY
+  fixed_cost_cny_year:
+    conservative: { y1: 42000, y2: 48000, y3: 54000, y4: 60000, y5: 66000 }
+    base: { y1: 54000, y2: 66000, y3: 78000, y4: 90000, y5: 102000 }
+    optimistic: { y1: 66000, y2: 84000, y3: 102000, y4: 120000, y5: 140000 }
+  paid_cac_cny: { conservative: 0, base: 0, optimistic: 0 }
+  note_cac: "Primary acquisition is organic English SEO; paid CAC held at 0 in base model."
+
+# 回报与风险（相对「投入本项目的风险本金」而非全池）
+returns:
+  risk_capital_cny:
+    conservative: 80000
+    base: 120000
+    optimistic: 200000
+  # 现金成功：36 个月内累计经营现金流 ≥ 风险本金，且无重大合规处罚
+  win_prob:
+    low: 0.12
+    mid: 0.18
+    high: 0.25
+  m_win:
+    conservative: 1.8
+    base: 2.8
+    optimistic: 4.5
+  loss_of_stake: 1.0
+  horizon_years: 5
+  book_roi_pct:
+    conservative: [ -40, -10, 20, 50, 80 ]
+    base: [ -20, 20, 60, 110, 180 ]
+    optimistic: [ 10, 50, 120, 220, 350 ]
+
+old_need_claims:
+  # 来自 need.txt 的不可复现自报，仅作偏差对照
+  claimed_book_annualized: 0.30
+  claimed_win_rate_mid: 0.105
+  claimed_payoff_ratio: 7.0
+  claimed_ev_moic: 1.5
+  claimed_risk_adj_annualized: 0.10
+  claimed_roi5_pct: 1
+  claimed_m_from_roi5: 1.01
+  claimed_y1_revenue_usd: 1500000

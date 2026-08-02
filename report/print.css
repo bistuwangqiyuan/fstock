@@ -1,0 +1,95 @@
+/* Print / PDF stylesheet — Apple-like calm density */
+
+@page {
+  size: A4;
+  margin: 16mm 14mm 18mm 14mm;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #1d1d1f !important;
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  .wrap {
+    max-width: none;
+    padding: 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 0 0 18px;
+    break-after: avoid;
+  }
+
+  .brand {
+    font-size: 28pt !important;
+  }
+
+  .lede {
+    font-size: 11pt;
+  }
+
+  section {
+    padding: 16px 0 8px;
+    break-inside: avoid-page;
+  }
+
+  h2 {
+    font-size: 16pt;
+    break-after: avoid;
+  }
+
+  h3, h4 {
+    break-after: avoid;
+  }
+
+  .metrics {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .metric,
+  .card-block,
+  .phase,
+  .callout,
+  .warn,
+  .danger {
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  .bars {
+    height: 140px;
+  }
+
+  table {
+    break-inside: auto;
+    font-size: 8.5pt;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footer {
+    break-before: avoid;
+  }
+
+  /* Soften animations for print */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "version": "1.0.0",
+  "as_of": "2026-08-02",
+  "pool_cny": 1000000,
+  "scenarios": {
+    "conservative": {
+      "risk_capital_cny": 80000,
+      "rows": [
+        {
+          "year_index": 1,
+          "year_key": "y1",
+          "revenue_cny": 7165.5,
+          "ebitda_cny": -36984.15,
+          "cumulative_ebitda_cny": -36984.15,
+          "book_roi_pct": -40
+        },
+        {
+          "year_index": 2,
+          "year_key": "y2",
+          "revenue_cny": 21496.49,
+          "ebitda_cny": -32952.46,
+          "cumulative_ebitda_cny": -69936.61,
+          "book_roi_pct": -10
+        },
+        {
+          "year_index": 3,
+          "year_key": "y3",
+          "revenue_cny": 44492.99,
+          "ebitda_cny": -22854.91,
+          "cumulative_ebitda_cny": -92791.52,
+          "book_roi_pct": 20
+        },
+        {
+          "year_index": 4,
+          "year_key": "y4",
+          "revenue_cny": 68489.48,
+          "ebitda_cny": -12057.37,
+          "cumulative_ebitda_cny": -104848.89,
+          "book_roi_pct": 50
+        },
+        {
+          "year_index": 5,
+          "year_key": "y5",
+          "revenue_cny": 91985.97,
+          "ebitda_cny": -1609.82,
+          "cumulative_ebitda_cny": -106458.71,
+          "book_roi_pct": 80
+        }
+      ],
+      "payback_vs_risk_capital_year": null
+    },
+    "base": {
+      "risk_capital_cny": 120000,
+      "rows": [
+        {
+          "year_index": 1,
+          "year_key": "y1",
+          "revenue_cny": 44381.09,
+          "ebitda_cny": -20270.37,
+          "cumulative_ebitda_cny": -20270.37,
+          "book_roi_pct": -20
+        },
+        {
+          "year_index": 2,
+          "year_key": "y2",
+          "revenue_cny": 126767.05,
+          "ebitda_cny": 30342.96,
+          "cumulative_ebitda_cny": 10072.59,
+          "book_roi_pct": 20
+        },
+        {
+          "year_index": 3,
+          "year_key": "y3",
+          "revenue_cny": 258534.09,
+          "ebitda_cny": 118485.91,
+          "cumulative_ebitda_cny": 128558.5,
+          "book_roi_pct": 60
+        },
+        {
+          "year_index": 4,
+          "year_key": "y4",
+          "revenue_cny": 421429.79,
+          "ebitda_cny": 230286.64,
+          "cumulative_ebitda_cny": 358845.14,
+          "book_roi_pct": 110
+        },
+        {
+          "year_index": 5,
+          "year_key": "y5",
+          "revenue_cny": 567573.06,
+          "ebitda_cny": 329355.52,
+          "cumulative_ebitda_cny": 688200.66,
+          "book_roi_pct": 180
+        }
+      ],
+      "payback_vs_risk_capital_year": "y3"
+    },
+    "optimistic": {
+      "risk_capital_cny": 200000,
+      "rows": [
+        {
+          "year_index": 1,
+          "year_key": "y1",
+          "revenue_cny": 200441.2,
+          "ebitda_cny": 98361.78,
+          "cumulative_ebitda_cny": 98361.78,
+          "book_roi_pct": 10
+        },
+        {
+          "year_index": 2,
+          "year_key": "y2",
+          "revenue_cny": 653611.84,
+          "ebitda_cny": 451961.71,
+          "cumulative_ebitda_cny": 550323.49,
+          "book_roi_pct": 50
+        },
+        {
+          "year_index": 3,
+          "year_key": "y3",
+          "revenue_cny": 1346867.8,
+          "ebitda_cny": 1002431.6,
+          "cumulative_ebitda_cny": 1552755.09,
+          "book_roi_pct": 120
+        },
+        {
+          "year_index": 4,
+          "year_key": "y4",
+          "revenue_cny": 2094412.0,
+          "ebitda_cny": 1597417.84,
+          "cumulative_ebitda_cny": 3150172.93,
+          "book_roi_pct": 220
+        },
+        {
+          "year_index": 5,
+          "year_key": "y5",
+          "revenue_cny": 2950176.8,
+          "ebitda_cny": 2279144.98,
+          "cumulative_ebitda_cny": 5429317.91,
+          "book_roi_pct": 350
+        }
+      ],
+      "payback_vs_risk_capital_year": "y2"
+    }
+  },
+  "contrast_old_need": {
+    "old_y1_to_y5_revenue_usd": [
+      1500000,
+      5000000,
+      12000000,
+      20000000,
+      30000000
+    ],
+    "old_y1_to_y5_revenue_cny": [
+      10800000.0,
+      36000000.0,
+      86400000.0,
+      144000000.0,
+      216000000.0
+    ],
+    "old_y1_revenue_usd": 1500000,
+    "note": "Old need.txt figures are not reproducible under solo/20h/compliance constraints; replaced by SEO+Ads lean model."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "as_of": "2026-08-02",
+  "pool_cny": 1000000.0,
+  "probe_cap_cny": 120000.0,
+  "formula": "f* = p - (1-p)/b ; half-Kelly = max(f*,0)/2",
+  "scenarios": {
+    "conservative": {
+      "p": 0.12,
+      "b": 0.8,
+      "f_star": -0.98,
+      "half_kelly": 0.0,
+      "full_kelly_cny": 0.0,
+      "half_kelly_cny": 0.0,
+      "recommended_deploy_cny": 60000.0,
+      "recommended_fraction_of_pool": 0.06,
+      "note": "Kelly f*≤0：数学上不应扩张风险本金；仅允许极小验证探针资本以获取信息期权。"
+    },
+    "base": {
+      "p": 0.18,
+      "b": 1.8,
+      "f_star": -0.275556,
+      "half_kelly": 0.0,
+      "full_kelly_cny": 0.0,
+      "half_kelly_cny": 0.0,
+      "recommended_deploy_cny": 60000.0,
+      "recommended_fraction_of_pool": 0.06,
+      "note": "Kelly f*≤0：数学上不应扩张风险本金；仅允许极小验证探针资本以获取信息期权。"
+    },
+    "optimistic": {
+      "p": 0.25,
+      "b": 3.5,
+      "f_star": 0.035714,
+      "half_kelly": 0.017857,
+      "full_kelly_cny": 35714.29,
+      "half_kelly_cny": 17857.14,
+      "recommended_deploy_cny": 17857.14,
+      "recommended_fraction_of_pool": 0.017857,
+      "note": "采用半Kelly并受 probe_cap 与情景风险本金约束；禁止 All-in 全池。"
+    }
+  },
+  "headline": {
+    "base_f_star": -0.275556,
+    "base_recommended_deploy_cny": 60000.0,
+    "never_all_in": true,
+    "statement": "对100万资金池，基准情景 Kelly f*=-27.56%；建议配置约 ¥60,000（6.00% 池），禁止全仓。"
+  }
+}

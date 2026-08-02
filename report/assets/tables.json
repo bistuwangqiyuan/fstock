@@ -1,0 +1,874 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "as_of": "2026-08-02",
+    "title": "F Stock · 全 AI 无人公司商业机会报告",
+    "subtitle": "公开市场情绪与教育信息站 · 自有资金精益 · 可复现计算"
+  },
+  "opportunity": {
+    "version": "1.0.0",
+    "as_of": "2026-08-02",
+    "weights": {
+      "compliance": 0.22,
+      "solo_executable": 0.18,
+      "capital_efficiency": 0.14,
+      "automation": 0.14,
+      "demand_reality": 0.12,
+      "moat_realism": 0.1,
+      "user_value_good": 0.1
+    },
+    "rows": [
+      {
+        "id": "info_hub",
+        "name": "公开市场情绪与投资者教育信息站（SEO+Ads+事实提醒）",
+        "selected": true,
+        "veto_reason": null,
+        "scores": {
+          "compliance": 8.7,
+          "solo_executable": 8.5,
+          "capital_efficiency": 8.3,
+          "automation": 9.1,
+          "demand_reality": 7.4,
+          "moat_realism": 5.6,
+          "user_value_good": 8.2
+        },
+        "weighted_score": 8.148
+      },
+      {
+        "id": "news_agg",
+        "name": "股票新闻/公告聚合站（无建议、无信号）",
+        "selected": false,
+        "veto_reason": null,
+        "scores": {
+          "compliance": 8.4,
+          "solo_executable": 8.0,
+          "capital_efficiency": 7.4,
+          "automation": 8.6,
+          "demand_reality": 7.0,
+          "moat_realism": 4.4,
+          "user_value_good": 7.2
+        },
+        "weighted_score": 7.528
+      },
+      {
+        "id": "sentiment_dash",
+        "name": "公开情绪仪表盘 SaaS（无买卖信号）",
+        "selected": false,
+        "veto_reason": null,
+        "scores": {
+          "compliance": 7.2,
+          "solo_executable": 6.2,
+          "capital_efficiency": 6.0,
+          "automation": 7.8,
+          "demand_reality": 6.8,
+          "moat_realism": 5.2,
+          "user_value_good": 6.8
+        },
+        "weighted_score": 6.648
+      },
+      {
+        "id": "sentiment_api",
+        "name": "情绪指标开发者 API（信息产品）",
+        "selected": false,
+        "veto_reason": null,
+        "scores": {
+          "compliance": 7.6,
+          "solo_executable": 5.8,
+          "capital_efficiency": 6.4,
+          "automation": 8.0,
+          "demand_reality": 5.8,
+          "moat_realism": 5.5,
+          "user_value_good": 6.5
+        },
+        "weighted_score": 6.628
+      },
+      {
+        "id": "strategy_gen",
+        "name": "AI 交易策略/买卖信号生成器",
+        "selected": false,
+        "veto_reason": "易落入 Investment Adviser 规制；与无人公司、合法合规约束冲突",
+        "scores": {
+          "compliance": 1.5,
+          "solo_executable": 3.0,
+          "capital_efficiency": 4.0,
+          "automation": 7.2,
+          "demand_reality": 7.8,
+          "moat_realism": 4.0,
+          "user_value_good": 2.8
+        },
+        "weighted_score": 4.054
+      },
+      {
+        "id": "personal_reco",
+        "name": "个性化荐股与投资建议引擎",
+        "selected": false,
+        "veto_reason": "明确落入投顾/投资建议规制；否决",
+        "scores": {
+          "compliance": 1.0,
+          "solo_executable": 2.5,
+          "capital_efficiency": 3.5,
+          "automation": 6.5,
+          "demand_reality": 8.2,
+          "moat_realism": 3.5,
+          "user_value_good": 2.5
+        },
+        "weighted_score": 3.654
+      }
+    ],
+    "selected_id": "info_hub",
+    "selected_name": "公开市场情绪与投资者教育信息站（SEO+Ads+事实提醒）",
+    "top_non_vetoed_id": "info_hub",
+    "selection_consistent": true
+  },
+  "unit_economics": {
+    "version": "1.0.0",
+    "as_of": "2026-08-02",
+    "fx": {
+      "usd_cny": 7.2,
+      "note": "Reference USD/CNY for model consistency as of 2026-08-02; not a FX forecast."
+    },
+    "scenarios": {
+      "conservative": {
+        "years": [
+          {
+            "year": "y1",
+            "monthly_pageviews": 20000,
+            "ads_cny": 4320.0,
+            "alerts_cny": 2845.5,
+            "affiliate_cny": 0.0,
+            "revenue_cny": 7165.5,
+            "cogs_cny": 2149.65,
+            "fixed_cny": 42000.0,
+            "ebitda_cny": -36984.15,
+            "rpm_usd": 2.5,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": -36984.15
+          },
+          {
+            "year": "y2",
+            "monthly_pageviews": 60000,
+            "ads_cny": 12960.0,
+            "alerts_cny": 8536.49,
+            "affiliate_cny": 0.0,
+            "revenue_cny": 21496.49,
+            "cogs_cny": 6448.95,
+            "fixed_cny": 48000.0,
+            "ebitda_cny": -32952.46,
+            "rpm_usd": 2.5,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": -69936.61
+          },
+          {
+            "year": "y3",
+            "monthly_pageviews": 120000,
+            "ads_cny": 25920.0,
+            "alerts_cny": 17072.99,
+            "affiliate_cny": 1500.0,
+            "revenue_cny": 44492.99,
+            "cogs_cny": 13347.9,
+            "fixed_cny": 54000.0,
+            "ebitda_cny": -22854.91,
+            "rpm_usd": 2.5,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": -92791.52
+          },
+          {
+            "year": "y4",
+            "monthly_pageviews": 180000,
+            "ads_cny": 38880.0,
+            "alerts_cny": 25609.48,
+            "affiliate_cny": 4000.0,
+            "revenue_cny": 68489.48,
+            "cogs_cny": 20546.84,
+            "fixed_cny": 60000.0,
+            "ebitda_cny": -12057.37,
+            "rpm_usd": 2.5,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": -104848.89
+          },
+          {
+            "year": "y5",
+            "monthly_pageviews": 240000,
+            "ads_cny": 51840.0,
+            "alerts_cny": 34145.97,
+            "affiliate_cny": 6000.0,
+            "revenue_cny": 91985.97,
+            "cogs_cny": 27595.79,
+            "fixed_cny": 66000.0,
+            "ebitda_cny": -1609.82,
+            "rpm_usd": 2.5,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": -106458.71
+          }
+        ],
+        "payback_vs_risk_capital_year": null,
+        "y5_revenue_cny": 91985.97,
+        "y5_ebitda_cny": -1609.82,
+        "y5_cum_ebitda_cny": -106458.71
+      },
+      "base": {
+        "years": [
+          {
+            "year": "y1",
+            "monthly_pageviews": 50000,
+            "ads_cny": 21600.0,
+            "alerts_cny": 22781.09,
+            "affiliate_cny": 0.0,
+            "revenue_cny": 44381.09,
+            "cogs_cny": 10651.46,
+            "fixed_cny": 54000.0,
+            "ebitda_cny": -20270.37,
+            "rpm_usd": 5.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": -20270.37
+          },
+          {
+            "year": "y2",
+            "monthly_pageviews": 140000,
+            "ads_cny": 60480.0,
+            "alerts_cny": 63787.05,
+            "affiliate_cny": 2500.0,
+            "revenue_cny": 126767.05,
+            "cogs_cny": 30424.09,
+            "fixed_cny": 66000.0,
+            "ebitda_cny": 30342.96,
+            "rpm_usd": 5.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 10072.59
+          },
+          {
+            "year": "y3",
+            "monthly_pageviews": 280000,
+            "ads_cny": 120960.0,
+            "alerts_cny": 127574.09,
+            "affiliate_cny": 10000.0,
+            "revenue_cny": 258534.09,
+            "cogs_cny": 62048.18,
+            "fixed_cny": 78000.0,
+            "ebitda_cny": 118485.91,
+            "rpm_usd": 5.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 128558.5
+          },
+          {
+            "year": "y4",
+            "monthly_pageviews": 450000,
+            "ads_cny": 194400.0,
+            "alerts_cny": 205029.79,
+            "affiliate_cny": 22000.0,
+            "revenue_cny": 421429.79,
+            "cogs_cny": 101143.15,
+            "fixed_cny": 90000.0,
+            "ebitda_cny": 230286.64,
+            "rpm_usd": 5.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 358845.14
+          },
+          {
+            "year": "y5",
+            "monthly_pageviews": 600000,
+            "ads_cny": 259200.0,
+            "alerts_cny": 273373.06,
+            "affiliate_cny": 35000.0,
+            "revenue_cny": 567573.06,
+            "cogs_cny": 136217.53,
+            "fixed_cny": 102000.0,
+            "ebitda_cny": 329355.52,
+            "rpm_usd": 5.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 688200.66
+          }
+        ],
+        "payback_vs_risk_capital_year": "y3",
+        "y5_revenue_cny": 567573.06,
+        "y5_ebitda_cny": 329355.52,
+        "y5_cum_ebitda_cny": 688200.66
+      },
+      "optimistic": {
+        "years": [
+          {
+            "year": "y1",
+            "monthly_pageviews": 100000,
+            "ads_cny": 77760.0,
+            "alerts_cny": 118681.2,
+            "affiliate_cny": 4000.0,
+            "revenue_cny": 200441.2,
+            "cogs_cny": 36079.42,
+            "fixed_cny": 66000.0,
+            "ebitda_cny": 98361.78,
+            "rpm_usd": 9.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 98361.78
+          },
+          {
+            "year": "y2",
+            "monthly_pageviews": 320000,
+            "ads_cny": 248832.0,
+            "alerts_cny": 379779.84,
+            "affiliate_cny": 25000.0,
+            "revenue_cny": 653611.84,
+            "cogs_cny": 117650.13,
+            "fixed_cny": 84000.0,
+            "ebitda_cny": 451961.71,
+            "rpm_usd": 9.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 550323.49
+          },
+          {
+            "year": "y3",
+            "monthly_pageviews": 650000,
+            "ads_cny": 505440.0,
+            "alerts_cny": 771427.8,
+            "affiliate_cny": 70000.0,
+            "revenue_cny": 1346867.8,
+            "cogs_cny": 242436.2,
+            "fixed_cny": 102000.0,
+            "ebitda_cny": 1002431.6,
+            "rpm_usd": 9.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 1552755.09
+          },
+          {
+            "year": "y4",
+            "monthly_pageviews": 1000000,
+            "ads_cny": 777600.0,
+            "alerts_cny": 1186812.0,
+            "affiliate_cny": 130000.0,
+            "revenue_cny": 2094412.0,
+            "cogs_cny": 376994.16,
+            "fixed_cny": 120000.0,
+            "ebitda_cny": 1597417.84,
+            "rpm_usd": 9.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 3150172.93
+          },
+          {
+            "year": "y5",
+            "monthly_pageviews": 1400000,
+            "ads_cny": 1088640.0,
+            "alerts_cny": 1661536.8,
+            "affiliate_cny": 200000.0,
+            "revenue_cny": 2950176.8,
+            "cogs_cny": 531031.82,
+            "fixed_cny": 140000.0,
+            "ebitda_cny": 2279144.98,
+            "rpm_usd": 9.0,
+            "paid_cac_cny": 0,
+            "cumulative_ebitda_cny": 5429317.91
+          }
+        ],
+        "payback_vs_risk_capital_year": "y2",
+        "y5_revenue_cny": 2950176.8,
+        "y5_ebitda_cny": 2279144.98,
+        "y5_cum_ebitda_cny": 5429317.91
+      }
+    },
+    "notes": [
+      "Primary acquisition is organic English SEO; paid CAC held at 0 in base model.",
+      "Alert MAU approximated as 55% of monthly pageviews.",
+      "Affiliate path is compliance-uncertain; kept small in base."
+    ]
+  },
+  "financials": {
+    "version": "1.0.0",
+    "as_of": "2026-08-02",
+    "pool_cny": 1000000,
+    "scenarios": {
+      "conservative": {
+        "risk_capital_cny": 80000,
+        "rows": [
+          {
+            "year_index": 1,
+            "year_key": "y1",
+            "revenue_cny": 7165.5,
+            "ebitda_cny": -36984.15,
+            "cumulative_ebitda_cny": -36984.15,
+            "book_roi_pct": -40
+          },
+          {
+            "year_index": 2,
+            "year_key": "y2",
+            "revenue_cny": 21496.49,
+            "ebitda_cny": -32952.46,
+            "cumulative_ebitda_cny": -69936.61,
+            "book_roi_pct": -10
+          },
+          {
+            "year_index": 3,
+            "year_key": "y3",
+            "revenue_cny": 44492.99,
+            "ebitda_cny": -22854.91,
+            "cumulative_ebitda_cny": -92791.52,
+            "book_roi_pct": 20
+          },
+          {
+            "year_index": 4,
+            "year_key": "y4",
+            "revenue_cny": 68489.48,
+            "ebitda_cny": -12057.37,
+            "cumulative_ebitda_cny": -104848.89,
+            "book_roi_pct": 50
+          },
+          {
+            "year_index": 5,
+            "year_key": "y5",
+            "revenue_cny": 91985.97,
+            "ebitda_cny": -1609.82,
+            "cumulative_ebitda_cny": -106458.71,
+            "book_roi_pct": 80
+          }
+        ],
+        "payback_vs_risk_capital_year": null
+      },
+      "base": {
+        "risk_capital_cny": 120000,
+        "rows": [
+          {
+            "year_index": 1,
+            "year_key": "y1",
+            "revenue_cny": 44381.09,
+            "ebitda_cny": -20270.37,
+            "cumulative_ebitda_cny": -20270.37,
+            "book_roi_pct": -20
+          },
+          {
+            "year_index": 2,
+            "year_key": "y2",
+            "revenue_cny": 126767.05,
+            "ebitda_cny": 30342.96,
+            "cumulative_ebitda_cny": 10072.59,
+            "book_roi_pct": 20
+          },
+          {
+            "year_index": 3,
+            "year_key": "y3",
+            "revenue_cny": 258534.09,
+            "ebitda_cny": 118485.91,
+            "cumulative_ebitda_cny": 128558.5,
+            "book_roi_pct": 60
+          },
+          {
+            "year_index": 4,
+            "year_key": "y4",
+            "revenue_cny": 421429.79,
+            "ebitda_cny": 230286.64,
+            "cumulative_ebitda_cny": 358845.14,
+            "book_roi_pct": 110
+          },
+          {
+            "year_index": 5,
+            "year_key": "y5",
+            "revenue_cny": 567573.06,
+            "ebitda_cny": 329355.52,
+            "cumulative_ebitda_cny": 688200.66,
+            "book_roi_pct": 180
+          }
+        ],
+        "payback_vs_risk_capital_year": "y3"
+      },
+      "optimistic": {
+        "risk_capital_cny": 200000,
+        "rows": [
+          {
+            "year_index": 1,
+            "year_key": "y1",
+            "revenue_cny": 200441.2,
+            "ebitda_cny": 98361.78,
+            "cumulative_ebitda_cny": 98361.78,
+            "book_roi_pct": 10
+          },
+          {
+            "year_index": 2,
+            "year_key": "y2",
+            "revenue_cny": 653611.84,
+            "ebitda_cny": 451961.71,
+            "cumulative_ebitda_cny": 550323.49,
+            "book_roi_pct": 50
+          },
+          {
+            "year_index": 3,
+            "year_key": "y3",
+            "revenue_cny": 1346867.8,
+            "ebitda_cny": 1002431.6,
+            "cumulative_ebitda_cny": 1552755.09,
+            "book_roi_pct": 120
+          },
+          {
+            "year_index": 4,
+            "year_key": "y4",
+            "revenue_cny": 2094412.0,
+            "ebitda_cny": 1597417.84,
+            "cumulative_ebitda_cny": 3150172.93,
+            "book_roi_pct": 220
+          },
+          {
+            "year_index": 5,
+            "year_key": "y5",
+            "revenue_cny": 2950176.8,
+            "ebitda_cny": 2279144.98,
+            "cumulative_ebitda_cny": 5429317.91,
+            "book_roi_pct": 350
+          }
+        ],
+        "payback_vs_risk_capital_year": "y2"
+      }
+    },
+    "contrast_old_need": {
+      "old_y1_to_y5_revenue_usd": [
+        1500000,
+        5000000,
+        12000000,
+        20000000,
+        30000000
+      ],
+      "old_y1_to_y5_revenue_cny": [
+        10800000.0,
+        36000000.0,
+        86400000.0,
+        144000000.0,
+        216000000.0
+      ],
+      "old_y1_revenue_usd": 1500000,
+      "note": "Old need.txt figures are not reproducible under solo/20h/compliance constraints; replaced by SEO+Ads lean model."
+    }
+  },
+  "returns": {
+    "version": "1.0.0",
+    "as_of": "2026-08-02",
+    "formulas": {
+      "m_book": "1 + ROI5/100",
+      "r_book": "M_book ** (1/5) - 1",
+      "ev_l0": "p * M_win + (1-p) * 0",
+      "ev_l1": "p * M_win + (1-p) * 1",
+      "r_risk": "EV ** (1/5) - 1",
+      "payoff_ratio_b": "(M_win - 1) / loss_of_stake"
+    },
+    "scenarios": {
+      "conservative": {
+        "risk_capital_cny": 80000,
+        "book_roi_path_pct": [
+          -40,
+          -10,
+          20,
+          50,
+          80
+        ],
+        "book": {
+          "m_book": 1.8,
+          "r_book": 0.124746,
+          "roi5_pct": 80
+        },
+        "win_prob": 0.12,
+        "m_win": 1.8,
+        "payoff_ratio_b": 0.8,
+        "ev": {
+          "p": 0.12,
+          "m_win": 1.8,
+          "ev_l0": 0.216,
+          "ev_l1": 1.096,
+          "r_risk_l0": -0.263978,
+          "r_risk_l1": 0.018503
+        },
+        "success_definition": "36个月内累计经营现金流≥风险本金，且无重大合规处罚；退出事件为次要情景，不计入主胜率除非单独标注。"
+      },
+      "base": {
+        "risk_capital_cny": 120000,
+        "book_roi_path_pct": [
+          -20,
+          20,
+          60,
+          110,
+          180
+        ],
+        "book": {
+          "m_book": 2.8,
+          "r_book": 0.22866,
+          "roi5_pct": 180
+        },
+        "win_prob": 0.18,
+        "m_win": 2.8,
+        "payoff_ratio_b": 1.8,
+        "ev": {
+          "p": 0.18,
+          "m_win": 2.8,
+          "ev_l0": 0.504,
+          "ev_l1": 1.324,
+          "r_risk_l0": -0.128061,
+          "r_risk_l1": 0.057737
+        },
+        "success_definition": "36个月内累计经营现金流≥风险本金，且无重大合规处罚；退出事件为次要情景，不计入主胜率除非单独标注。"
+      },
+      "optimistic": {
+        "risk_capital_cny": 200000,
+        "book_roi_path_pct": [
+          10,
+          50,
+          120,
+          220,
+          350
+        ],
+        "book": {
+          "m_book": 4.5,
+          "r_book": 0.35096,
+          "roi5_pct": 350
+        },
+        "win_prob": 0.25,
+        "m_win": 4.5,
+        "payoff_ratio_b": 3.5,
+        "ev": {
+          "p": 0.25,
+          "m_win": 4.5,
+          "ev_l0": 1.125,
+          "ev_l1": 1.875,
+          "r_risk_l0": 0.023836,
+          "r_risk_l1": 0.133967
+        },
+        "success_definition": "36个月内累计经营现金流≥风险本金，且无重大合规处罚；退出事件为次要情景，不计入主胜率除非单独标注。"
+      }
+    },
+    "sensitivity_base_m": {
+      "p_low": {
+        "p": 0.12,
+        "m_win": 2.8,
+        "ev_l0": 0.336,
+        "ev_l1": 1.216,
+        "r_risk_l0": -0.195978,
+        "r_risk_l1": 0.039888
+      },
+      "p_mid": {
+        "p": 0.18,
+        "m_win": 2.8,
+        "ev_l0": 0.504,
+        "ev_l1": 1.324,
+        "r_risk_l0": -0.128061,
+        "r_risk_l1": 0.057737
+      },
+      "p_high": {
+        "p": 0.25,
+        "m_win": 2.8,
+        "ev_l0": 0.7,
+        "ev_l1": 1.45,
+        "r_risk_l0": -0.06885,
+        "r_risk_l1": 0.077144
+      },
+      "payoff_ratio_at_base_m": 1.8
+    },
+    "old_need_audit": {
+      "claimed": {
+        "claimed_book_annualized": 0.3,
+        "claimed_win_rate_mid": 0.105,
+        "claimed_payoff_ratio": 7.0,
+        "claimed_ev_moic": 1.5,
+        "claimed_risk_adj_annualized": 0.1,
+        "claimed_roi5_pct": 1,
+        "claimed_m_from_roi5": 1.01,
+        "claimed_y1_revenue_usd": 1500000
+      },
+      "recalc_from_roi5": {
+        "m_book": 1.01,
+        "r_book": 0.001992,
+        "roi5_pct": 1
+      },
+      "recalc_ev_band_using_claimed_p_and_m": {
+        "p": 0.105,
+        "m": 1.01,
+        "m_win": 1.01,
+        "ev_l0": 0.10605,
+        "ev_l1": 1.00105,
+        "r_risk_l0": -0.361586,
+        "r_risk_l1": 0.00021
+      }
+    }
+  },
+  "kelly": {
+    "version": "1.0.0",
+    "as_of": "2026-08-02",
+    "pool_cny": 1000000.0,
+    "probe_cap_cny": 120000.0,
+    "formula": "f* = p - (1-p)/b ; half-Kelly = max(f*,0)/2",
+    "scenarios": {
+      "conservative": {
+        "p": 0.12,
+        "b": 0.8,
+        "f_star": -0.98,
+        "half_kelly": 0.0,
+        "full_kelly_cny": 0.0,
+        "half_kelly_cny": 0.0,
+        "recommended_deploy_cny": 60000.0,
+        "recommended_fraction_of_pool": 0.06,
+        "note": "Kelly f*≤0：数学上不应扩张风险本金；仅允许极小验证探针资本以获取信息期权。"
+      },
+      "base": {
+        "p": 0.18,
+        "b": 1.8,
+        "f_star": -0.275556,
+        "half_kelly": 0.0,
+        "full_kelly_cny": 0.0,
+        "half_kelly_cny": 0.0,
+        "recommended_deploy_cny": 60000.0,
+        "recommended_fraction_of_pool": 0.06,
+        "note": "Kelly f*≤0：数学上不应扩张风险本金；仅允许极小验证探针资本以获取信息期权。"
+      },
+      "optimistic": {
+        "p": 0.25,
+        "b": 3.5,
+        "f_star": 0.035714,
+        "half_kelly": 0.017857,
+        "full_kelly_cny": 35714.29,
+        "half_kelly_cny": 17857.14,
+        "recommended_deploy_cny": 17857.14,
+        "recommended_fraction_of_pool": 0.017857,
+        "note": "采用半Kelly并受 probe_cap 与情景风险本金约束；禁止 All-in 全池。"
+      }
+    },
+    "headline": {
+      "base_f_star": -0.275556,
+      "base_recommended_deploy_cny": 60000.0,
+      "never_all_in": true,
+      "statement": "对100万资金池，基准情景 Kelly f*=-27.56%；建议配置约 ¥60,000（6.00% 池），禁止全仓。"
+    }
+  },
+  "sources": {
+    "as_of": "2026-08-02",
+    "note": "每条记录须可查证；标注 speculation 的条目不得单独支撑结论。",
+    "entries": [
+      {
+        "id": "stock_market_software_mi_2025",
+        "field": "Global stock market software market size (one industry estimate)",
+        "value": "USD 5.81B in 2025; CAGR ~12.8% to 2034",
+        "unit": "USD",
+        "url": "https://marketintelo.com/report/stock-market-software-market",
+        "retrieved": "2026-08-02",
+        "notes": "Commercial market report; treat as one bound in a range, not single truth. Cross-check with other vendors."
+      },
+      {
+        "id": "stock_analysis_software_di_2025",
+        "field": "Global stock analysis software market size (cross-check estimate)",
+        "value": "USD 15.8B in 2025; CAGR ~7.2% to 2034",
+        "unit": "USD",
+        "url": "https://dataintelo.com/report/global-stock-analysis-software-market",
+        "retrieved": "2026-08-02",
+        "notes": "Different scope vs MarketIntelo; report uses interval TAM narrative rather than picking one number."
+      },
+      {
+        "id": "gallup_stock_ownership_2025",
+        "field": "Share of Americans who own stock (2024–2025)",
+        "value": "62%",
+        "unit": "percent of US adults",
+        "url": "https://news.gallup.com/poll/266807/percentage-americans-owns-stock.aspx",
+        "retrieved": "2026-08-02",
+        "notes": "Includes stocks via mutual funds / retirement accounts; not equal to active trading SAM."
+      },
+      {
+        "id": "broadridge_retail_investors_2024",
+        "field": "US retail investors tracked via intermediaries (order of magnitude)",
+        "value": "~48–50 million",
+        "unit": "persons (taxable+IRA via intermediaries)",
+        "url": "https://www.gurufocus.com/news/2734930/broadridge-investor-pulse-now-an-interactive-tool-enabling-public-access-to-analyze-investment-behavior-of-nearly-50-million-us-retail-investors",
+        "retrieved": "2026-08-02",
+        "notes": "Secondary coverage of Broadridge Investor Pulse; used as SAM ceiling signal, not addressable users."
+      },
+      {
+        "id": "sec_fr_info_providers_2022",
+        "field": "SEC publisher exclusion / information providers under Advisers Act",
+        "value": "Publisher exclusion requires impersonal, bona fide, general & regular circulation (Lowe); personalized advice not excluded",
+        "unit": "regulatory",
+        "url": "https://www.federalregister.gov/documents/2022/06/22/2022-13307/request-for-comment-on-certain-information-providers-acting-as-investment-advisers",
+        "retrieved": "2026-08-02",
+        "notes": "Official Federal Register RFC. Not legal advice. Product must avoid personalized recommendations."
+      },
+      {
+        "id": "sec_ia_act_govinfo",
+        "field": "Investment Advisers Act of 1940 definition (statutory text)",
+        "value": "IA includes compensated advice as to advisability of investing/purchasing/selling securities",
+        "unit": "regulatory",
+        "url": "https://www.govinfo.gov/content/pkg/COMPS-1878/pdf/COMPS-1878.pdf",
+        "retrieved": "2026-08-02",
+        "notes": "Primary statute PDF via GovInfo."
+      },
+      {
+        "id": "ghosh_vc_failure_cash",
+        "field": "Venture-backed companies that never return cash to investors",
+        "value": "~75%",
+        "unit": "percent",
+        "url": "https://growthequityinterviewguide.com/venture-capital/venture-capital-resources/venture-capital-statistics",
+        "retrieved": "2026-08-02",
+        "notes": "Secondary summary of Shikhar Ghosh / HBS finding; used only to bound optimism on cash success, not as our win_prob directly."
+      },
+      {
+        "id": "adsense_rpm_us_finance_band",
+        "field": "US / English finance niche display RPM band (industry guides)",
+        "value": "Approx USD 2–15+ per 1000 pageviews depending on geo/quality; model uses 2.5/5.0/9.0",
+        "unit": "USD per 1000 pageviews",
+        "url": "https://www.ezytoolz.com/financial/adsense-revenue-calculator/",
+        "retrieved": "2026-08-02",
+        "notes": "Industry calculator; conservative/base/optimistic RPM deliberately mid-low of published ranges for lean honesty."
+      },
+      {
+        "id": "trends_f_stock_need",
+        "field": "Google Trends seed keyword volume (from need.txt)",
+        "value": 1000,
+        "unit": "Trends index/volume as provided",
+        "url": "local:need.txt",
+        "retrieved": "2026-07-29",
+        "notes": "speculation on absolute commercial search volume; treated as demand seed only, not TAM."
+      },
+      {
+        "id": "fx_model_usd_cny",
+        "field": "Model FX USD/CNY",
+        "value": "USD/CNY=7.20",
+        "unit": "CNY per USD",
+        "url": "model:assumptions.yaml#fx",
+        "retrieved": "2026-08-02",
+        "notes": "Fixed reference for reproducibility; not a forecast."
+      }
+    ]
+  },
+  "capital": {
+    "pool_cny": 1000000,
+    "probe_cap_cny": 120000,
+    "stop_months_neg_contrib": 6
+  },
+  "phases": {
+    "phase0": {
+      "name": "Phase 0 · 2周",
+      "goals": [
+        "合规免责声明与禁词表上线（禁买卖建议/信号话术）",
+        "公开情绪指标方法说明页 + 教育落地页",
+        "合法公开数据源确认与自动发布跑通7天"
+      ],
+      "pass_criteria": [
+        "站点可访问且无个性化荐股/买卖信号",
+        "自动化流水线连续7日无人工救火",
+        "周维护工时记录 ≤20h"
+      ]
+    },
+    "phase1": {
+      "name": "Phase 1 · 至第3月",
+      "goals": [
+        "扩展英语 SEO 主题簇（情绪/热度/教育）",
+        "SEO 内链与索引监测自动化",
+        "展示广告开通；评估提醒订阅试点"
+      ],
+      "pass_criteria": [
+        "有机点击与 RPM 可测且周报自动生成",
+        "广告收入 > 0 或明确卡点诊断",
+        "周维护仍 ≤20h"
+      ]
+    },
+    "phase2": {
+      "name": "Phase 2 · 至第12月",
+      "goals": [
+        "事实提醒订阅试点（非投顾）",
+        "内容模板库与成本账本自动化",
+        "按止损规则复盘"
+      ],
+      "pass_criteria": [
+        "基准情景单位经济路径可解释",
+        "累计经营现金流趋势可核对",
+        "未达标则缩编或终止（执行半Kelly/探针上限）"
+      ]
+    },
+    "stop_rule": "连续6个月负贡献且SEO无斜率→ 下调风险本金或终止项目。"
+  }
+}
